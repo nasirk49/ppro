@@ -11,7 +11,7 @@ using namespace std;
 // first argument must be transactions-ppro.csv
 int main(int argc, char **argv)
 {
-  if (string(argv[1]) != PPRO)
+  if (argc > 1 && string(argv[1]) != PPRO)
   {
     cout << "First file must be " + string(PPRO) << endl;
     return 1;
